@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/maintab_view_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/tabs_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_tabs_bottom_nor"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tabs_rb_home"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/select_tab_home_bg"
+                android:text="@string/tabs_home" />
+
+            <RadioButton
+                android:id="@+id/tabs_rb_person"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/select_tab_person_bg"
+                android:text="@string/tabs_person" />
+
+            <RadioButton
+                android:id="@+id/tabs_rb_more"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/select_tab_more_bg"
+                android:text="@string/tabs_more" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/tabs_iv_msg_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null"
+            android:background="@drawable/message_notice" />
+    </FrameLayout>
+
+</LinearLayout>

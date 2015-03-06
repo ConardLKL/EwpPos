@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/maintab_view_line" />
+
+    <include
+        android:id="@+id/layout_http_fail"
+        layout="@layout/http_fail"
+        android:visibility="gone" />
+
+    <com.limahao.ticket.view.fresh.PullToRefreshListView
+        android:id="@+id/ticket_order_list"
+        style="@style/list_style" />
+
+</LinearLayout>

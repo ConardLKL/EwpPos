@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/maintab_view_line" />
+
+    <include
+        android:id="@+id/layout_http_fail"
+        layout="@layout/http_fail"
+        android:visibility="gone" />
+
+    <ScrollView
+        style="@style/scroll_style"
+        android:layout_margin="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ticket_order_detial_selector"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ticket_order_detial_succes_selector"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/order_succes_detail_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/city_list_bg_color"
+                    android:textSize="@dimen/font_16" />
+
+                <TextView
+                    android:id="@+id/ticket_order_succes_detail_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/ticket_order_detial_succes"
+                    android:textColor="@color/city_list_bg_color"
+                    android:textSize="@dimen/font_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/order_succes_pwd_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/ticket_order_detial_pwd"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/font_15" />
+
+                <EditText
+                    android:id="@+id/order_succes_detial_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/order_succes_pwd_txt"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:inputType="none"
+                    android:textColor="@color/font_color_red"
+                    android:textSize="@dimen/font_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/order_succes_detial_riding_time_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:text="@string/ticker_pay_success_riding_time"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/font_15" />
+
+                <TextView
+                    android:id="@+id/order_succes_detial_riding_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/order_succes_detial_riding_time_txt"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/font_15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/order_succes_detial_ordernum_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:text="@string/ticker_order_num_title"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/font_15" />
+
+                <TextView
+                    android:id="@+id/order_succes_detial_ordernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/order_succes_detial_ordernum_txt"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/font_15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/order_succes_detial_tv_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/start_station"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/order_succes_detial_tv_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/end_station"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_15"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/query_detail_layout_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/order_succes_detial_train_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_15" />
+
+                    <TextView
+                        android:id="@+id/order_succes_detial_ticket_entrance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/query_detail_layout_left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/ticker_pay_success_train_number"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/ticker_pay_success_ticket_entrance"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_15" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/order_succes_detial_seat_number_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:text="@string/ticker_pay_success_seat_number"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/font_15" />
+
+                <TextView
+                    android:id="@+id/order_succes_detial_seat_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/order_succes_detial_seat_number_txt"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_red"
+                    android:textSize="@dimen/font_15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/order_detial_pay_tv_num_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/ticker_order_pay_num_title"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/font_15" />
+
+                <TextView
+                    android:id="@+id/order_succes_detial_order_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/order_detial_pay_tv_num_title"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_red"
+                    android:textSize="@dimen/font_18" />
+
+                <TextView
+                    android:id="@+id/order_succes_detial_order_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_red"
+                    android:textSize="@dimen/font_18" />
+
+                <TextView
+                    android:id="@+id/order_succes_detail_tv_total_price_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/order_succes_detial_order_price"
+                    android:text="@string/ticker_order_pay_total_title"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/font_15" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="温馨提示:请前往立马好自动取票机取票如需发票\n请前往各始发车站服务台领取"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

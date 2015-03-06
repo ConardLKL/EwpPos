@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="list_time_title">
+        <item>全天</item>
+        <item>上午(06:00–12:00)</item>
+        <item>下午(12:00–18:00)</item>
+        <item>晚上(18:00–23:59)</item>
+    </string-array>
+    <string-array name="list_time_value">
+        <item>0000–2359</item>
+        <item>0600–1200</item>
+        <item>1200–1800</item>
+        <item>1800–2359</item>
+    </string-array>
+    <string-array name="list_order_title">
+        <item>全部</item>
+        <item>订票成功</item>
+        <item>订票失败</item>
+        <item>未支付订单</item>
+    </string-array>
+    <string-array name="list_order_value">
+        <item></item>
+        <item>1</item>
+        <item>3</item>
+        <item>0</item>
+    </string-array>
+
+</resources>

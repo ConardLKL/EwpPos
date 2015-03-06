@@ -1,0 +1,259 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="SampleTheme" parent="android:Theme">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+    </style>
+
+    <style name="SampleTheme.Light" parent="android:Theme.Light">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+    </style>
+
+    <attr name="numberPickerStyle" format="reference" />
+
+    <declare-styleable name="NumberPicker">
+
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- @hide The divider for making the selection area. -->
+        <attr name="selectionDivider" format="reference" />
+        <!-- @hide The height of the selection divider. -->
+        <attr name="selectionDividerHeight" format="dimension" />
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr name="selectionDividersDistance" format="dimension" />
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+        <!-- @hide The layout of the number picker. -->
+        <attr name="internalLayout" format="reference" />
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr name="virtualButtonPressedDrawable" format="reference" />
+    </declare-styleable>
+
+    <style name="NPWidget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+
+    <style name="NPWidget.NumberPicker">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:fadingEdgeLength">50dip</item>
+    </style>
+
+    <style name="NPWidget.Holo.NumberPicker" parent="NPWidget.NumberPicker">
+        <item name="solidColor">@android:color/white</item>
+        <item name="selectionDivider">@drawable/np_numberpicker_selection_divider</item>
+        <item name="selectionDividerHeight">1dip</item>
+        <item name="internalLayout">@layout/number_picker_with_selector_wheel</item>
+        <item name="internalMinWidth">64dip</item>
+        <item name="internalMaxHeight">180dip</item>
+    </style>
+
+    <style name="NPWidget.Holo.Light.NumberPicker" parent="NPWidget.Holo.NumberPicker">
+        <item name="virtualButtonPressedDrawable">@drawable/item_background_holo_light</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_down_in</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- tabs 字体 -->
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/font_13</item>
+        <item name="android:textColor">@drawable/maintab_btn_txt_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:paddingBottom">@dimen/bottom_tab_padding_bottom</item>
+    </style>
+    <!-- 个人 ,更多  字体 颜色 -->
+    <style name="persion_info_txt">
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:textColor">@color/person_info_txt</item>
+    </style>
+    <!-- include left right 字体大小,颜色 -->
+    <style name="include_lr_txt">
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:textColor">@color/font_color_blue</item>
+    </style>
+
+    <!-- include center 字体大小,颜色 -->
+    <style name="include_conter_txt">
+        <item name="android:textSize">@dimen/font_20</item>
+        <item name="android:textColor">@color/include_txt_color</item>
+    </style>
+    <!-- home 菜单栏 -->
+    <style name="home_memu_txt">
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/home_memu_btn_txt_color</item>
+    </style>
+    
+	<!--下来刷新   -->
+    <style name="list_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:divider">@null</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+	<!--城市列表  -->
+    <style name="city_listview_style" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/city_list_bg_color</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fadingEdge">none</item>
+        <!-- 放到item里面做背景选择  因为有些机型有问题 -->
+        <!-- <item name="android:listSelector">@drawable/city_list_bg_selector</item> -->
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:textColor">@color/city_list_item_txt_color</item>
+        <item name="android:textSize">@dimen/font_17</item>
+        <item name="android:divider">@color/city_list_line_color</item>
+        <item name="android:dividerHeight">1.0dip</item>
+    </style>
+
+    <!-- 加载对话框，自定义样式 -->
+    <style name="loading_dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置完全透明 -->
+        <item name="android:windowBackground">@drawable/shape_conner10_loadingbg</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--
+        设置屏幕变暗 
+        <item name="android:backgroundDimEnabled">true</item>
+        -->
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+    </style>
+    
+    <!-- 提示对话框，自定义样式 -->
+    <style name="alert_dialog" parent="@android:style/Theme.Dialog">
+		<!-- 设置无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/more_view_none_selector</item>
+    </style>
+    
+    <!-- 滚动条 -->
+    <style name="scroll_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_handle_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="PopupAnimationPullDown">  
+        <item name="android:windowEnterAnimation">@anim/pull_down_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/pull_down_hidden_anim</item>
+    </style>
+    
+    
+    <!-- 银联支付插件 -->
+    <style name="umspay_AppTheme" parent="android:Theme.Light" />
+    <style name="umspay_mydialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="umspay_activity_mydialog" parent="@android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/umspay_myactivity_dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+    <style name="umspay_activity_mydialog22" parent="@android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/umspay_myactivity_dialog2222</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+    <style name="umspay_upomp_bypay_MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="umspay_Myanimation" parent="android:Theme.Light">
+        <item name="android:windowAnimationStyle">@style/umspay_AnimationActivity</item>
+    </style>
+    <style name="umspay_AnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/umspay_push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/umspay_push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/umspay_slide_up_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/umspay_slide_down_out</item>
+    </style>
+    <style name="umspay_mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/umspay_slide_up_in1</item>
+        <item name="@android:windowExitAnimation">@anim/umspay_slide_down_out1</item>
+    </style>
+    
+    <style name="guide_button_style">
+        <item name="android:layout_height">@dimen/guide_start_button_height</item>
+        <item name="android:textColor">@color/font_color_white</item>
+        <item name="android:textSize">@dimen/font_18</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/ticket_btn_blue_bg_selector</item>
+        <item name="android:gravity">center</item>
+	</style>
+    
+</resources>

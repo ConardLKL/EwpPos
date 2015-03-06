@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popupwindow_order_ticket_bg"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingBottom="25dp" >
+
+    <TextView
+        android:id="@+id/popu_order_ticket_tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/ticket_btn_close_bg_selector" />
+
+    <TextView
+        android:id="@+id/popu_order_ticket_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/popu_order_ticket_tv_bottom"
+        android:layout_marginTop="@dimen/popu_order_ticket_tv_top"
+        android:padding="5dp"
+        android:text="@string/ticker_query_detail_presentation"
+        android:textColor="@color/font_color_red_h"
+        android:textSize="@dimen/font_18" />
+
+    <TextView
+        android:id="@+id/popu_order_ticket_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popu_order_ticket_tv_title"
+        android:layout_centerInParent="true"
+        android:text="@string/ticker_query_detail_pre_content"
+        android:textColor="@color/font_color_pink"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/popu_order_ticket_tv_confrim_by"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popu_order_ticket_tv_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/popu_order_ticket_tv_confrim_by_top"
+        android:background="@drawable/ticket_btn_yellow_bg_selector"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/ticker_query_detail_confirm_buy"
+        android:textColor="@color/font_color_white"
+        android:textSize="@dimen/font_20" />
+
+</RelativeLayout>

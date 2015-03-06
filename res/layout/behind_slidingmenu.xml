@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_sliding_menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_title_height"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sliding_menu_title"
+            style="@style/include_lr_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="按时间筛选" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/layout_view_line" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_sliding_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/layout_view_line"
+        android:dividerHeight="1.0dp"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>

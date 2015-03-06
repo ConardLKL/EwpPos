@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/maintab_view_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/p_m_layout_margin"
+        android:background="@drawable/person_view_none_selector"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/p_m_layout_padding" >
+
+            <TextView
+                android:id="@+id/person_name_txt"
+                style="@style/persion_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/p_m_tv_padding"
+                android:text="@string/person_name_txt" />
+
+            <EditText
+                android:id="@+id/person_name_txt_et"
+                style="@style/persion_info_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:maxLength="10"
+                android:padding="@dimen/p_m_tv_padding"
+                android:layout_toRightOf="@id/person_name_txt"
+                android:background="@null" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/layout_view_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/p_m_layout_padding" >
+
+            <TextView
+                android:id="@+id/person_sex_txt"
+                style="@style/persion_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/p_m_tv_padding"
+                android:text="@string/person_sex_txt" />
+
+            <TextView
+                android:id="@+id/person_sex_txt_et"
+                style="@style/persion_info_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:padding="@dimen/p_m_tv_padding"
+                android:layout_toRightOf="@id/person_sex_txt"
+                android:background="@null" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/layout_view_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/p_m_layout_padding" >
+
+            <TextView
+                android:id="@+id/person_id_card"
+                style="@style/persion_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/p_m_tv_padding"
+                android:text="@string/person_id_card_txt" />
+
+            <EditText
+                android:id="@+id/person_id_card_et"
+                style="@style/persion_info_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/person_id_card"
+                android:background="@null"
+                android:digits="@string/digits_verify"
+                android:enabled="false"
+                android:maxLength="18"
+                android:padding="@dimen/p_m_tv_padding"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/person_view_none_selector"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <RelativeLayout
+            android:id="@+id/accout_alter_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/p_m_layout_padding" >
+
+            <TextView
+                android:id="@+id/person_phone_txt"
+                style="@style/persion_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/p_m_tv_padding"
+                android:text="@string/person_phone_txt" />
+
+            <TextView
+                android:id="@+id/person_register_phone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="@dimen/p_m_tv_padding"
+                android:layout_toRightOf="@id/person_phone_txt"
+                android:textColor="@color/account_phone_color"
+                android:textSize="@dimen/font_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

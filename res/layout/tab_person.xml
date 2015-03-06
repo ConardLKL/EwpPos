@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/maintab_view_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/p_m_layout_margin"
+        android:background="@drawable/person_view_none_selector"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <RelativeLayout
+            android:id="@+id/myinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_item_no_corners_selector"
+            android:clickable="true"
+            android:padding="@dimen/p_m_layout_padding" >
+
+            <ImageView
+                android:id="@+id/info_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:padding="@dimen/p_m_tv_padding"
+                android:src="@drawable/person_information_img" />
+
+            <TextView
+                style="@style/persion_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/info_img"
+                android:text="@string/person_information" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingRight="5dp"
+                android:src="@drawable/content_area_arrows" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/layout_view_line" />
+
+        <RelativeLayout
+            android:id="@+id/myaccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_item_no_corners_selector"
+            android:clickable="true"
+            android:padding="@dimen/p_m_layout_padding" >
+
+            <ImageView
+                android:id="@+id/account_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:padding="8dp"
+                android:src="@drawable/person_account_img" />
+
+            <TextView
+                style="@style/persion_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/account_img"
+                android:text="@string/person_account" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingRight="5dp"
+                android:src="@drawable/content_area_arrows" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/layout_view_line" />
+
+        <RelativeLayout
+            android:id="@+id/myticket_order"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_item_no_corners_selector"
+            android:clickable="true"
+            android:padding="@dimen/p_m_layout_padding" >
+
+            <ImageView
+                android:id="@+id/ticket_order_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:padding="@dimen/p_m_tv_padding"
+                android:src="@drawable/person_ticket_order_img" />
+
+            <TextView
+                android:id="@+id/persion_tv_ticket_order"
+                style="@style/persion_info_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ticket_order_img"
+                android:text="@string/person_ticket_order" />
+
+            <ImageView
+                android:id="@+id/persion_iv_msg_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/persion_tv_ticket_order"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/message_notice" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingRight="5dp"
+                android:src="@drawable/content_area_arrows" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

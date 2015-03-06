@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_ticket_query_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/maintab_view_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ticker_pay_success_tv_suc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ticker_pay_success_suc"
+            android:textColor="@color/font_color_black"
+            android:textSize="@dimen/font_20" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ticker_pay_success_tv_suc"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ticket_pay_success" />
+
+        <TextView
+            android:id="@+id/ticker_pay_success_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticker_pay_success_tv_suc"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/ticker_pay_success_time"
+            android:textColor="@color/font_color_gray_l"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/ticket_pay_success_tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+             android:layout_marginBottom="40dp"
+            android:background="@drawable/ticket_btn_blue_bg_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/ticker_pay_success_detail"
+            android:textColor="@color/font_color_white"
+            android:textSize="@dimen/font_20" />
+    </RelativeLayout>
+
+</LinearLayout>

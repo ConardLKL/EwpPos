@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true" android:state_checked="false" android:drawable="@drawable/hoem_menu_btn_pressed_bg"></item>
+    <item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/home_menu_btn_checked_bg"/>
+    <item android:state_checked="true"  android:drawable="@drawable/home_menu_btn_checked_bg"></item>
+	<item android:drawable="@drawable/home_memu_btn_nor_bg"></item>
+</selector>

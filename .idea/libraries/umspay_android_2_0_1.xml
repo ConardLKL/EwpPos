@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="umspay_android_2.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/umspay_android_2.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

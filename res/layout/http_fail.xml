@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/http_fail_tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/http_fail_hint"
+        android:textColor="@color/font_color_gray_h"
+        android:textSize="@dimen/font_14" />
+    
+    <TextView
+        android:id="@+id/http_fail_tv_hint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/http_fail_tv_hint"
+        android:text="@string/http_fail_hint1"
+        android:textColor="@color/font_color_gray_h"
+        android:textSize="@dimen/font_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/http_fail_tv_hint"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wifi_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/http_fail_tv_hint1"
+        android:layout_centerInParent="true"
+        android:text="@string/http_fail_click"
+        android:textColor="@color/font_color_gray_h"
+        android:textSize="@dimen/font_14" />
+
+</RelativeLayout>

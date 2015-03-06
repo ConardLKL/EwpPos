@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 背景颜色 -->
+    <color name="bg_color">#f7f7f7</color>
+    <!-- table 菜单栏 背景色 -->
+    <color name="bg_tabs_bottom_nor">#ffffff</color>
+    <!--app按下去背景颜色 -->
+    <color name="bg_press">#f0f6f8</color>
+    <!-- 圆角的边框下颜色 -->
+    <color name="bg_stroke">#e8e8e8</color>
+    <!-- 字体颜色一 -->
+    <color name="font_color_white">#ffffff</color>
+    <color name="font_color_black">#3c3c3c</color>
+    <color name="font_color_gray">#7e7e7e</color>
+    <color name="font_color_gray_h">#7c7c7c</color>
+    <color name="font_color_gray_l">#a4a4a4</color>
+    <color name="font_color_blue">#00a2ea</color>
+    <color name="font_color_disable">#cdcdcd</color>
+    <color name="font_color_red">#fe0000</color>
+    <color name="font_color_red_h">#ff811c</color>
+    <color name="font_color_pink">#e2e2e2</color>
+    <color name="font_color_gray_detial">#919191</color>
+    
+    <!-- 按钮颜色 -->
+    <drawable name="btn_color_blue">#00a2ea</drawable>
+    <drawable name="btn_color_blue_pre">#028bd1</drawable>
+    
+    
+    <!-- 加载框背景颜色 -->
+    <color name="loading_bg">#ff4c4c4c</color>
+    <color name="loading_text_grayer">#ff999999</color>
+    <color name="loading_transparent_background">#00111111</color>
+
+	<!-- 个人  每项  选择颜色 -->
+	<drawable name="person_layout_item_nor_drawable">#ffffff</drawable>
+	<drawable name="person_layout_item_checked_drawable">#f0f6f8</drawable>
+	
+	<!-- 更多  每项  选择颜色 -->
+	<color name="more_layout_nor_bg">#ffffff</color>
+	<color name="more_layout_checked_bg">#f0f6f8</color>
+	
+    <!-- 透明的 -->
+    <drawable name="transparent">#00000000</drawable>
+    <!--60%透明黑色 -->
+    <color name="tran_black">#99000000</color>
+    
+	<!-- 城市-->
+    <color name="edittext_hint_txt_color">#ffb9b9b9</color>
+    <color name="textview_black_txt_color">#3c3c3c</color>
+    <color name="city_list_head_txt_color">#7d7d7d</color>
+    <color name="city_list_item_txt_color">#3c3c3c</color>
+    <color name="city_search_txt_color">#a4a4a4</color>
+    <color name="city_list_line_color">#ededed</color>
+    <color name="city_list_bg_color">#ffffff</color>
+    <color name="city_list_select_color">#f0f6f8</color>
+    <drawable name="city_list_bg_color">#ffffff</drawable>
+    <drawable name="city_list_select_color">#f0f6f8</drawable>
+    
+	<!--侧滑菜单栏颜色  -->
+	<color name="slidingmenu_txt_color_nor">#9d9d9d</color>
+    <color name="slidingmenu_txt_color_pre">#00a2ea</color>
+    
+    <!--车票查询信息 颜色  -->
+    <drawable name="ticket_query_list_nor">#f7f7f7</drawable>
+ 	<drawable name="ticket_query_list_checked">#00a2ea</drawable>
+ 	<drawable name="ticket_order_list_checked">#dbe3e7</drawable>
+    <color name="ticket_query_leave_date">#707070</color>
+    <color name="ticket_query_route_name">#797979</color>
+    <color name="ticket_query_price">#ff6000</color>
+    <color name="ticket_order_detial_fail">#989898</color>
+    <color name="ticket_query_bus_type">#888787</color>
+    <drawable name="history_list_bg_nor">#f7f7f7</drawable>
+ 	<drawable name="history_list_bg_pre">#f0f6f8</drawable>
+    
+	<!--到达地 选择 颜色  -->
+	<color name="home_destination_color">#a4a4a4</color>
+    <!--个人,更多 字体颜色 -->
+    <color name="person_info_txt">#3c3c3c</color>
+    
+    <!-- include  字体 颜色-->
+    <color name="include_txt_color">#00a2ea</color>
+    <drawable name="include_bg">#ffffff</drawable>
+    <drawable name="include_bg_pre">#f0f6f8</drawable>
+    
+    <!-- 日期 选择器 颜色-->
+    <color name="numberpicker_input">#000000</color>
+    
+    <!-- 主界面 -->
+    <color name="maintab_view_line">#cccccc</color>
+   	<color name="layout_view_line">#e1e1e1</color>
+   	<color name="maintab_btn_txt_color_nor">#777777</color>
+    <color name="maintab_btn_txt_color_pre">#00a2ea</color>
+	<!-- 菜单栏 memu 背景颜色 -->
+	<color name="home_memu_txt_nor_color">#00a2ea</color>
+	<color name="home_memu_txt_checked_color">#ffffff</color>
+	
+	<drawable name="home_memu_btn_nor_bg">#ffffff</drawable>
+	<drawable name="home_menu_btn_checked_bg">#00a2ea</drawable>
+	<drawable name="hoem_menu_btn_pressed_bg">#eeeeee</drawable>
+	<!--登录    忘记密码 字体颜色  -->
+	<color name="login_forget_password">#959595</color>
+	<color name="account_phone_color">#7c7c7c</color>
+	<color name="alter_new_phone_color">#b3b3b3</color>
+	
+	
+	<!--银联支付插件  -->
+	<color name="umspay_transparent">#00FF00FF</color>
+    <drawable name="umspay_myactivity_dialog">#32000000</drawable>
+ 	<drawable name="umspay_myactivity_dialog2222">#32000000</drawable>
+ 	<color name="umspay_text_color">#6f7e9d</color>
+ 	
+</resources>

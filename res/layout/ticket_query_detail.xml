@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_ticket_query_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/maintab_view_line" />
+
+    <ScrollView style="@style/scroll_style" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/p_m_layout_margin"
+                android:background="@drawable/more_view_none_selector"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ticket_dot_repeat_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/query_detail_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:textColor="@color/font_color_blue"
+                        android:textSize="@dimen/font_15" />
+
+                    <TextView
+                        android:id="@+id/query_detail_tv_servercash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/font_color_red"
+                        android:textSize="@dimen/font_15" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ticket_line_repeat_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/query_detail_tv_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/start_station"
+                            android:drawablePadding="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_15"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/query_detail_tv_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/end_station"
+                            android:drawablePadding="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_15"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/query_detail_tv_bustype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/query_detail_layout_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/query_detail_tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_14" />
+
+                        <TextView
+                            android:id="@+id/query_detail_tv_surplus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_14" />
+
+                        <TextView
+                            android:id="@+id/query_detail_tv_mileage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/query_detail_layout_left"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/ticker_query_detail_price_title"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/ticker_query_detail_surplus_title"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/ticker_query_detail_mileage_title"
+                            android:textColor="@color/font_color_black"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/query_detail_tv_num_cut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/ticket_number_cut_bg_selector"
+                        android:padding="15dp" />
+
+                    <TextView
+                        android:id="@+id/query_detail_tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/query_detail_tv_num_cut"
+                        android:background="@drawable/ticket_number_none_selector"
+                        android:paddingLeft="35dp"
+                        android:paddingRight="35dp"
+                        android:textColor="@color/font_color_red"
+                        android:textSize="@dimen/font_16" />
+
+                    <TextView
+                        android:id="@+id/query_detail_tv_num_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/query_detail_tv_number"
+                        android:drawableRight="@drawable/ticket_number_add_bg_selector"
+                        android:padding="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/ticker_query_detail_totalp_title"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:id="@+id/query_detail_tv_totalp_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/ticker_query_detail_total_title"
+                        android:textColor="@color/font_color_black"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:id="@+id/query_detail_tv_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/font_color_red"
+                        android:textSize="@dimen/font_17" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <EditText
+                        android:id="@+id/query_detail_et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ticket_number_none_selector"
+                        android:hint="@string/ticker_query_detail_phone_hint"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/font_color_gray"
+                        android:textSize="@dimen/font_16" />
+
+                    <TextView
+                        android:id="@+id/query_detail_tv_phone_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/pull_down"
+                        android:padding="10dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ticket_dot_repeat_bg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/query_detail_tv_buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ticket_btn_yellow_bg_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/ticker_query_detail_buy"
+                android:textColor="@color/font_color_white"
+                android:textSize="@dimen/font_20" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

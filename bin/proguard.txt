@@ -1,0 +1,131 @@
+# view res/layout/guide.xml #generated:6
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/websit.xml #generated:20
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:190
+-keep class com.hxcr.umspay.activity.Initialize { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.hxcr.umspay.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.hxcr.umspay.activity.SustainBankList { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.hxcr.umspay.activity.UmsInputPayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.hxcr.umspay.activity.UmsPayResultWuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.limahao.ticket.BaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.limahao.ticket.BaseApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.limahao.ticket.BaseFragmentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.limahao.ticket.MainActivity { <init>(...); }
+
+# view res/layout/slidingmenumain.xml #generated:2
+-keep class com.limahao.ticket.slidingmenu.SlidingMenu { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.limahao.ticket.ui.AccountInfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.limahao.ticket.ui.AlterPwd { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.limahao.ticket.ui.BindPhone { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.limahao.ticket.ui.CitySelect { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.limahao.ticket.ui.ContactActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class com.limahao.ticket.ui.ConversationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class com.limahao.ticket.ui.ForgotPwd { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.limahao.ticket.ui.Guide { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.limahao.ticket.ui.Login { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.limahao.ticket.ui.PersonInfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.limahao.ticket.ui.Register { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.limahao.ticket.ui.SplashScreen { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.limahao.ticket.ui.TicketOrder { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.limahao.ticket.ui.TicketOrderFailDetial { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.limahao.ticket.ui.TicketOrderPay { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.limahao.ticket.ui.TicketOrderPayDetial { <init>(...); }
+
+# view AndroidManifest.xml #generated:164
+-keep class com.limahao.ticket.ui.TicketOrderSuccesDetial { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.limahao.ticket.ui.TicketPaySuccesss { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.limahao.ticket.ui.TicketQuery { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.limahao.ticket.ui.TicketQueryDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:182
+-keep class com.limahao.ticket.ui.WebViewAc { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.limahao.ticket.ui.Website { <init>(...); }
+
+# view res/layout/number_picker_holo.xml #generated:7
+-keep class com.limahao.ticket.view.NumberPicker { <init>(...); }
+
+# view res/layout/number_picker_with_selector_wheel.xml #generated:22
+-keep class com.limahao.ticket.view.NumberPicker$CustomEditText { <init>(...); }
+
+# view res/layout/activity_light.xml #generated:12
+# view res/layout/number_picker_dialog.xml #generated:1
+-keep class com.limahao.ticket.view.NumberPicker2 { <init>(...); }
+
+# view res/layout/city_main_view.xml #generated:45
+-keep class com.limahao.ticket.view.city.BladeView { <init>(...); }
+
+# view res/layout/city_main_view.xml #generated:41
+-keep class com.limahao.ticket.view.city.PinnedHeaderListView { <init>(...); }
+
+# view res/layout/ticket_order.xml #generated:20
+# view res/layout/ticket_query.xml #generated:65
+-keep class com.limahao.ticket.view.fresh.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:233
+-keep class com.umeng.common.net.DownloadingService { <init>(...); }
+
+# view AndroidManifest.xml #generated:238
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+

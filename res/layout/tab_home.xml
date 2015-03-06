@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/maintab_view_line" />
+
+    <RadioGroup
+        android:id="@+id/tab_home_rg_memu"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dp"
+        android:layout_margin="@dimen/p_m_layout_margin"
+        android:background="@drawable/memu_view_none_selector"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <RadioButton
+            android:id="@+id/memu_ticket_query_rb"
+            style="@style/home_memu_txt"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/home_memu_btn_bg_color"
+            android:checked="true"
+            android:text="@string/home_memu_ticket_query" />
+
+        <RadioButton
+            android:id="@+id/memu_ticket_website_rb"
+            style="@style/home_memu_txt"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/home_memu_btn_bg_color"
+            android:text="@string/home_memu_ticket_website" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/tab_home_layout_queryinput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/p_m_layout_margin"
+        android:background="@drawable/more_view_none_selector"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/home_departure_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/p_m_tv_padding"
+                android:paddingBottom="@dimen/p_m_tv_padding"
+                android:paddingRight="@dimen/p_m_tv_padding"
+                android:src="@drawable/home_departure_img" />
+
+            <TextView
+                android:id="@+id/home_departure_tv_txt"
+                android:textColor="@color/font_color_gray_h"
+                android:textSize="@dimen/font_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/home_departure_img"
+                android:paddingLeft="5dp"
+                android:paddingTop="@dimen/p_m_tv_padding"
+                android:paddingBottom="@dimen/p_m_tv_padding"
+                android:paddingRight="@dimen/p_m_tv_padding"
+                android:text="@string/home_departure_txt" />
+
+            <TextView
+                android:id="@+id/home_departure_tv"
+                android:textColor="@color/font_color_black"
+                android:textSize="@dimen/font_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/home_departure_tv_txt"
+                android:padding="@dimen/p_m_tv_padding"
+                android:text="@string/departure_txt" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/layout_view_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/home_destination_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/p_m_tv_padding"
+                android:paddingBottom="@dimen/p_m_tv_padding"
+                android:paddingRight="@dimen/p_m_tv_padding"
+                android:src="@drawable/home_destination_img" />
+
+            <TextView
+                android:id="@+id/home_destination_tv"
+                android:textColor="@color/font_color_gray_h"
+                android:textSize="@dimen/font_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/home_destination_img"
+                android:paddingLeft="5dp"
+                android:paddingTop="@dimen/p_m_tv_padding"
+                android:paddingBottom="@dimen/p_m_tv_padding"
+                android:paddingRight="@dimen/p_m_tv_padding"
+                android:text="@string/home_destination_txt" />
+
+            <ImageView
+                android:id="@+id/home_destination_tv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingRight="5dp"
+                android:src="@drawable/content_area_arrows" />
+
+            <TextView
+                android:id="@+id/home_destination_tv_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/home_destination_tv"
+                android:padding="@dimen/p_m_tv_padding"
+                android:text="@string/home_destination_select"
+                android:textColor="@color/home_destination_color"
+                android:textSize="@dimen/font_17" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/layout_view_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/home_date_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/p_m_tv_padding"
+                android:paddingBottom="@dimen/p_m_tv_padding"
+                android:paddingRight="@dimen/p_m_tv_padding"
+                android:src="@drawable/home_date_img" />
+
+            <TextView
+                android:id="@+id/home_date_tv"
+                android:textColor="@color/font_color_gray_h"
+                android:textSize="@dimen/font_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/home_date_img"
+                android:paddingLeft="5dp"
+                android:paddingTop="@dimen/p_m_tv_padding"
+                android:paddingBottom="@dimen/p_m_tv_padding"
+                android:paddingRight="@dimen/p_m_tv_padding"
+                android:text="@string/home_date_txt" />
+
+            <TextView
+                android:id="@+id/home_date_tv_select"
+                style="@style/persion_info_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/home_date_tv"
+                android:padding="@dimen/p_m_tv_padding" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_home_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ticket_btn_blue_bg_selector"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/home_search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/home_search_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/home_search_img"
+            android:text="@string/home_search_txt"
+            android:textColor="@color/font_color_white"
+            android:textSize="@dimen/font_20" />
+    </RelativeLayout>
+
+</LinearLayout>

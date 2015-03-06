@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- 车票查询 -->
+    <dimen name="ticket_query_item_pading">80dp</dimen>
+    <dimen name="popu_order_ticket_tv_bottom">10dp</dimen>
+    <dimen name="popu_order_ticket_tv_top">10dp</dimen>
+    <dimen name="popu_order_ticket_tv_confrim_by_top">18dp</dimen>
+</resources>
